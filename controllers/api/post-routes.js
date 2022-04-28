@@ -13,8 +13,8 @@ router.get('/', (req, res) => {
           'content',
           'created_at'
         ],
+        //include comments and usernames associated with comments and post
         include: [
-          // include the Comment model here:
           {
             model: Comment,
             attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
@@ -48,6 +48,7 @@ router.get('/:id', (req, res) => {
         'content',
         'created_at'
       ],
+      //include comments and usernames associated with comments and post
       include: [
         {
             model: Comment,

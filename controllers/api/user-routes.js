@@ -17,6 +17,7 @@ router.get('/', (req, res) => {
 // GET A SPECIFIC USER
 router.get('/:id', (req, res) => {
     User.findOne({
+    //incule all the user's posts and accociated comments
     include: [
         {
         model: Post,

@@ -5,7 +5,8 @@ const withAuth = require('../../utils/auth');
 //GET ALL COMMENTS
 router.get('/', (req, res) => {
     Comment.findAll({
-      order: [['created_at', 'DESC']], 
+        //order by most recent
+        order: [['created_at', 'DESC']], 
     })
       .then(dbPostData => res.json(dbPostData))
       .catch(err => {
