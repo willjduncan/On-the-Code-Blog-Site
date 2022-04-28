@@ -30,7 +30,7 @@ I WANT a CMS-style blog site
 
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
-<!-- Workforce Assembler is a program that allows a user to organize and store his/her organization's employee data. The challene is meant to combine everything I've learned about the back end so far, from earlier modules involving inquirer to the ability to create and fetch from databases using SQL. It will take good googling skills to assemble what I've learned into one cohesive program as well.  -->
+On The Code is a blog site that allows a user to create a username and password and post information and comments regarding anything tech-related. This challenge is the first entiely full-stack web application built from scratch on my own. Thus, it combines all the skills learned so far, including my newly acquired knowledge regarding handlebars, password handling, and sessions. Most importantly, it will reflect my ability to organize code in a proper and scalable order so that others can read and contribute to it and so that all the many parts of the program can communicate effectively with one another. 
 
 Once complete, the program should operate so that:
 
