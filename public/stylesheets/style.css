@@ -10,14 +10,15 @@ body, html {
     color: #333;
 }
   
-a {
+a, #logout{
     text-decoration: none;
-    color: #225ca3;
+    /* color: #225ca3; */
     font-weight: bold;
     transition: color .1s;
+    color: #333;  
 }
   
-a:hover {
+a:hover, #logout:hover {
     color: #3486eb;
 }
   
@@ -34,6 +35,10 @@ button {
   
 button:hover {
     background-color: #3486eb;
+}
+
+.post-header {
+
 }
   
 .post-list {
@@ -59,6 +64,8 @@ textarea {
   
 form > div {
     margin-bottom: 2%;
+    margin-top: 2px;
+    /* margin: 12px auto; */
 }
   
 form label {
@@ -68,13 +75,17 @@ form label {
 .wrapper {
     width: 100%;
     min-height: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
-  
+
+nav {
+    font-size: 1.5em;
+}
+
 header {
+    background-color: cadetblue;
     border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
@@ -83,7 +94,7 @@ header {
 }
   
 header h1 {
-    font-size: 1em;
+    font-size: 2.5em;
 }
   
 main {
@@ -131,16 +142,8 @@ main {
 .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
+    font-size: 15px;
 }
-  
-/* .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-} */
-  
-/* .upvote-btn:hover {
-    background-color: #1f9c13;
-} */
   
 .comment-form {
     margin-bottom: 5%;
@@ -155,19 +158,23 @@ main {
     background-color: #fff5eb;
 }
   
-.comment .meta {
+.comment .meta .comment-header {
     font-size: 90%;
     margin-bottom: .5%;
     opacity: .6;
 }
 
 .post {
-    border: 3px solid #333;
     margin-top: 0;
+    border: 3px solid #333;
 }
 
 .title {
     color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5px;
 }
 
 .post-box {
@@ -197,4 +204,16 @@ footer {
 
 .edit-post-title {
  width: 40%;
+}
+
+.login-form, .signup-form {
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 0 auto 10px auto;
+    width: 40%;
+}
+
+.login-header {
+    text-align: center;
 }

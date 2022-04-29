@@ -6,6 +6,7 @@ require('dotenv').config();
 // create connection to the db
 let sequelize;
 
+//link the database using the secret credentials in .env
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {

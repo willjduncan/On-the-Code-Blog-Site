@@ -3,10 +3,10 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
+//DISPLAY ALL POSTS AND ASSOCIATED COMMENTS ON THE DASHBOARD THAT APPLY TO THE USER
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
       where: {
-        // use the ID from the session
         user_id: req.session.user_id
       },
       attributes: [
@@ -41,7 +41,7 @@ router.get('/', withAuth, (req, res) => {
     });
 });
 
-
+//GET THE EDIT PAGE FOR A SPECIFIC POST
 router.get('/edit/:id', withAuth, (req, res) => {
     Post.findOne({
         where: {

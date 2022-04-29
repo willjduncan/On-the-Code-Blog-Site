@@ -1,10 +1,6 @@
 # On-the-Code-Blog-Site
 Module 14 Challenge
 
-
-# workforce-assembler
-Module 12 Challenge
-
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
         

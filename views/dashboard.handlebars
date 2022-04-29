@@ -18,10 +18,12 @@
   <h2>Your Posts</h2>
   <ol>
     {{#each posts as |post|}}
-    <li>
+    <li class="post-box">
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     </li>
+    <a href="/dashboard/edit/{{post.id}}">
+      <button class="edit-link">Edit post</button>
+    </a>
     {{/each}}
   </ol>
 </section>

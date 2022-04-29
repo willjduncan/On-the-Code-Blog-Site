@@ -30,8 +30,6 @@ const sess = {
 };
 
 app.use(session(sess));
-
-// turn on routes
 app.use(routes);
 
 // turn on connection to db and server

@@ -1,3 +1,4 @@
+//format dates to be legible and pluralize words as necessary
 module.exports = {
     format_date: date => {
       return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${new Date(

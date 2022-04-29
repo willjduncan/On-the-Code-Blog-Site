@@ -18,7 +18,8 @@ Post.init(
         allowNull: false
       },
       content: {
-        type: DataTypes.STRING,
+        //sets character limit to 650
+        type: DataTypes.STRING(650),
         allowNull: false
       },
       user_id: {
