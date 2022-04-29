@@ -111,29 +111,26 @@ Once the functionality was confirmed, I moved on to the aesthetics, making the p
 <!-- 
 Links to the repository can be found at [Questions](#questions).
 
-While this project's repository is available on Github, the site it deployed to Heroku. 
-
- You must first clone the repo, then run the command "npm install" on the Terminal/Command Line in order to download the dependencies. Make sure to also download inquirer, express, console.table, and node-fetch using "npm install %package%" for each respective package. Double check to make sure package.json includes "type":"module". From there, you can fill out and edit your team. If you want to run tests, you also have to install mysql2. -->
+While this project's repository is available on Github, the site it deployed to Heroku. If you clone the repo you must run the command "npm install" on the Terminal/Command Line and download the dependencies, all of which are mentioned in [Credits](#credits). -->
 
 
 
 
 ## Usage
 
-<!-- Once the project is cloned and the dependencies downloaded, type "npm start" to run the program. 
+Once the project is cloned and the dependencies downloaded, type "npm start" to run the program. 
 
-A screenshot of the program in action is shown below;
+A screenshot of the program in action is shown below, logged out and logged in;
 
-![screenshot of Active Site](/images/screenshot-active.png)
+![screenshot of Active Site, Logged Out](/images/screenshot-logout.png)
+![screenshot of Active Site, Logged In](/images/screenshot-login.png)
 
-Screenshots of the Employee.mjs file and the employeeRoutes.js file are below: 
 
-![screenshot of Employee.mjs](/images/screenshot-emp-mjs.png)
-![screenshot of employeeRoutes](/images/screenshot-emp-routes.png)
+Screenshots of the views/login.handlebars, public/login.js file and the dashboard-routes file are below: 
 
-A video explaining and demonstrating the app's functionality is below:
-
-[https://drive.google.com/file/d/1JNGO7VeioG-pQlIhTpD2w3Q7CdHCPZYn/view](https://drive.google.com/file/d/1JNGO7VeioG-pQlIhTpD2w3Q7CdHCPZYn/view) -->
+![screenshot of Login Handlebars](/images/screenshot-login-handlebars.png)
+![screenshot of Login Public](/images/screenshot-login-public.png)
+![screenshot of Dashboard Routes](/images/screenshot-dashboard-routes.png)
 
 
 ## Credits
@@ -170,6 +167,12 @@ The github repository to this project is below:
 [https://github.com/willjduncan/On-the-Code-Blog-Site.git](https://github.com/willjduncan/On-the-Code-Blog-Site.git)
 
 
+The application is deployed on Heroku. The site is below:
+
+[https://willjduncan-on-the-code.herokuapp.com/](https://willjduncan-on-the-code.herokuapp.com/)
+
+
+
 For any additional questions, I can be reached at willdunc12@gmail.com.
 
 <!-- ADD HEROKU -->
@@ -202,6 +205,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-<!-- complete styling -->
