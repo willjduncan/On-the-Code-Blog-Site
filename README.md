@@ -100,23 +100,13 @@ WHEN I am idle on the site for more than a set time
 
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 
-<!-- The final product should allow the user to make changes to employees, jobs, and departments, while also viewing the data in informative ways. It should also provide some protections to make sure the data is safe and consistent.
+The final product should allow the user to make a username and password to sign in and then keep the session open as they navigate various, previously inaccessible pages. By being signed in, the user can create posts and comment on their own and others' posts. The passwords should be safely stored, and posts should be deletable and editable. 
 
-I found this challenge to be particularly difficult. After setting up my sql files according to the outline provided, I began to work on the MySql requests. I had to ask for some help from a friend of mine involved in coding to begin to understand better the ins and outs of the syntax. I still have not found a way to send an alert if the request, say, for a manager's employee's returns an empty table because the id chosen is not that of a manager.
+I began this project on the backend, installing all the dependencies I knew I'd need and adding the file paths I'd rely on. I then focused on the models, to make sure the data collected is correctly organized and connected to one another. Once the models were how I wanted them, I created the API routes and tested them using Insomnia and MySql to make sure they worked. I went ahead and added the necessary middleware for authenticating users so that there'd be only tinkering left for the routes once I was done. 
 
-After I finally got the routes set up, I began to focus on the inquirer. Unfortunately, this also turned out to be much more challenging than anticipated. I tried to set up the inquirer so that, based on a user's choices and input, it would send fetch requests to the server. However, the terminal did not recognize my fetch function, so after much delving, I discovered I needed to download the node-fetch npm module, but then that wasn't registering, so I added "type":"module" to my package.json, and altered the prompter file to mjs from js. I then had to alter all of my imports and exports because the new system I set up didn't recognize the term "require".
+Afterwards, I added the handlebars and partials so that I could see a front end. For much of this project, I used the Just-Tech-News app built throughout Modules 13 and 14 as a guide for organizing and blueprinting this app. Once a front end was accessible, I focused on the public javascript, creating a way to create a user and log in online, confirming the paths I created work. I hooked up the buttons and double-checked the functionality of adding, editing, and deleting to ensure there were no mistakes in the setup. 
 
-Once that was sorted, writing the functions went smoothly. I had decided at the beginning of the project to include the following bonus functionality:
-
-Update employee managers.
-
-View employees by manager.
-
-View employees by department.
-
-View the total utilized budget of each department.
-
-Adding them at the beginning made the coding easier, because it meant I could finish and test all routes before focusing on trying to get inquirer to work. Once the basic functionality was complete, I refactored the inquirer code, placing it into separate files.  -->
+Once the functionality was confirmed, I moved on to the aesthetics, making the page look better through CSS, adding additional comments, and creating the README. 
 
 
 
@@ -125,7 +115,9 @@ Adding them at the beginning made the coding easier, because it meant I could fi
 <!-- 
 Links to the repository can be found at [Questions](#questions).
 
-While this project's repository is available on Github, but it does not have a front end and cannot be deployed. You must first clone the repo, then run the command "npm install" on the Terminal/Command Line in order to download the dependencies. Make sure to also download inquirer, express, console.table, and node-fetch using "npm install %package%" for each respective package. Double check to make sure package.json includes "type":"module". From there, you can fill out and edit your team. If you want to run tests, you also have to install mysql2. -->
+While this project's repository is available on Github, the site it deployed to Heroku. 
+
+ You must first clone the repo, then run the command "npm install" on the Terminal/Command Line in order to download the dependencies. Make sure to also download inquirer, express, console.table, and node-fetch using "npm install %package%" for each respective package. Double check to make sure package.json includes "type":"module". From there, you can fill out and edit your team. If you want to run tests, you also have to install mysql2. -->
 
 
 
@@ -150,19 +142,20 @@ A video explaining and demonstrating the app's functionality is below:
 
 ## Credits
 
-<!-- The coding boot camp Professional README Guide found at https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide was used as a template for this README. The license was picked from [https://choosealicense.com/](https://choosealicense.com/).The WHEN/THEN section of this README was based off the project assignment Acceptance Criteria. No TAs or classmates were used in the making of this challenge. I did enlist the help of an old friend who is also learning SQL at this time, Logan Kirkland, to achieve the table that shows all employees, but for all other methods I relied on myself and my googling skills. Most influence was taken particularly from U-Develop-It of Module 12 for coding related to SQL and my Team Profile Generator from the Module 10 Challenge for coding related to Inquirer. All employee names are book characters. Stack Overflow, MDN Web Docs, W3, and Google were critical to my success. MySql, Node.js, Insomnia, Express.js, npm, and npm's inquirer, express, console.table, and node-fetch packages were also used. -->
+The coding boot camp Professional README Guide found at https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide was used as a template for this README. The license was picked from [https://choosealicense.com/](https://choosealicense.com/).The WHEN/THEN section of this README was based off the project assignment Acceptance Criteria. No TAs or classmates were used in the making of this challenge. Most influence was taken from Just-Tech-News of Modules 13 and 14. Stack Overflow, MDN Web Docs, W3, and Google were critical to my success. MySql, Node.js, Insomnia, NPM, Express.js, express-session, Handlebars, Sequelize, bcrypt, and dotenv were used. 
+
 
 
 
 ## Contributing
 
-<!-- Other items to be added can be more employee information such as email, address, a timestamp, years with the company. We could add another table involving locations if workers are based in multiple cities. Adding a front end to this would also be a big step. Most pressing would be adding more protections to make sure the information we request gets properly vetted and the responses the user receives are informative. Setting Inquirer up so that the user can choose from department names, manager names, and employee names rather than type a user id would also help this program's functionality. -->
+Voting ability, expanding the number of characters a user can post, adding the ability to include screenshots and images to elaborate on tech developments and code, would all be great additions. If voting ability is implemented, there can be a page devoted to saved or liked posts, and posts could also be arranged according to likes, giving it a kind of reddit setup where the organization of posts can be tailored to user preferences. Profile pictures, a user account settings page, and more would also go a long way. If you make changes, test it locally on a branch before pushing to main. 
 
 
 
 ## Tests
 
-<!-- No Jest tests written were made for this challenge, but Insomnia is a critical tool in letting you test the program's GET, POST, PUT, and DELETE methods. If you want to run tests, download Insomnia or some similar program, activate the program in Terminal using "npm start", and then use the Localhost URL to try the different methods.  -->
+No Jest tests written were made for this challenge, but Insomnia is a critical tool in letting you test the program's GET, POST, PUT, and DELETE methods. If you want to run tests, download Insomnia or some similar program, activate the program in Terminal using "npm start", and then use the Localhost URL to try the different methods.  
 
 
 
@@ -215,5 +208,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-<!-- Change email to username for login route-->
 <!-- complete styling -->
