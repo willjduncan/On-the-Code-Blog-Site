@@ -108,10 +108,10 @@ Once the functionality was confirmed, I moved on to the aesthetics, making the p
 
 
 ## Installation
-<!-- 
-Links to the repository can be found at [Questions](#questions).
 
-While this project's repository is available on Github, the site it deployed to Heroku. If you clone the repo you must run the command "npm install" on the Terminal/Command Line and download the dependencies, all of which are mentioned in [Credits](#credits). -->
+Links to the repository and the deployed page can be found at [Questions](#questions).
+
+While this project's repository is available on Github, the site it deployed to Heroku. If you clone the repo you must run the command "npm install" on the Terminal/Command Line and download the dependencies, all of which are mentioned in [Credits](#credits).
 
 
 
@@ -175,7 +175,6 @@ The application is deployed on Heroku. The site is below:
 
 For any additional questions, I can be reached at willdunc12@gmail.com.
 
-<!-- ADD HEROKU -->
 
 
 
